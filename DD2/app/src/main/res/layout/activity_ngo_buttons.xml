@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="480dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_within"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Within 5kms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button_NGOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="4dp"
+        android:text="NGOs"
+        app:layout_constraintStart_toEndOf="@+id/button_within"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button_org"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="4dp"
+        android:text="Organizations"
+        app:layout_constraintStart_toEndOf="@+id/button_NGOs"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="489dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:autofillHints=""
+        android:background="#FBA97B"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="@+id/button_within"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/moans_u_suk" />
+
+    <ImageView
+        android:id="@+id/ngo1im"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="140dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/moans_smd" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/button_NGOs"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="492dp"
+        android:layout_height="695dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_within">
+
+        <LinearLayout
+            android:id="@+id/PageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/InButtonLayout"
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/blindppl"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:text="Mitra Jyothi\nC.A. Site No. P 22, 31st Main, 18th Cross Road, 1st Sector, HSR Layout, Bengaluru. \nPrefers Clothes, Toys, Stationary, Household Items"
+            android:textSize="20sp" />
+    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ButtonLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/InButtonLayout1"
+                    android:layout_width="240dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ngo1"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="My One Tenth NGO\n55, 14th Main, Sector III, Hosur Sarjapur Rd Layout, Bangalore, India.\nPrefers Clothes, Toys, Stationary, Sports Equipment"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ButtonLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/InButtonLayout2"
+                    android:layout_width="240dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ngo3"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="Taj Foundation\nNGO Off Haralur, Karnataka\nPrefers Clothes, Toys, Stationary, Sports Equipment"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ButtonLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/InButtonLayout3"
+                    android:layout_width="240dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ngo3"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="Taj Foundation\nNGO Off Haralur, Karnataka\nPrefers Clothes, Toys, Stationary, Sports Equipment"
+                    android:textSize="20sp" />
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

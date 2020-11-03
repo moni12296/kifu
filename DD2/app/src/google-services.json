@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "826086331130",
+    "firebase_url": "https://kifu---dd.firebaseio.com",
+    "project_id": "kifu---dd",
+    "storage_bucket": "kifu---dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826086331130:android:c902830d77d137b0156f43",
+        "android_client_info": {
+          "package_name": "com.example.dd2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826086331130-nark1pkrsmhlegdgsnglcbm9c7jnm9s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJdW9Cf9xBMGKZOmaD8AFC2_UKw91qv0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826086331130-nark1pkrsmhlegdgsnglcbm9c7jnm9s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
