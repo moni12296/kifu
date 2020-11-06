@@ -97,28 +97,28 @@
             android:layout_height="fill_parent"
             android:orientation="vertical">
             <LinearLayout
-        android:id="@+id/ButtonLayout"
-        android:layout_width="match_parent"
-        android:layout_height="215dp"
-        android:clickable="true"
-        android:orientation="horizontal">
+                android:id="@+id/ButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:clickable="true"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/InButtonLayout"
-            android:layout_width="240dp"
-            android:layout_height="fill_parent"
-            android:background="@drawable/blindppl"
-            android:orientation="vertical"></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/InButtonLayout"
+                    android:layout_width="240dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/blindppl"
+                    android:orientation="vertical"></LinearLayout>
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:padding="10sp"
-            android:text="Mitra Jyothi\nC.A. Site No. P 22, 31st Main, 18th Cross Road, 1st Sector, HSR Layout, Bengaluru. \nPrefers Clothes, Toys, Stationary, Household Items"
-            android:textSize="20sp" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:text="Mitra Jyothi\nC.A. Site No. P 22, 31st Main, 18th Cross Road, 1st Sector, HSR Layout, Bengaluru. \nPrefers Clothes, Toys, Stationary, Household Items"
+                    android:textSize="20sp" />
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/ButtonLayout1"
                 android:layout_width="match_parent"
@@ -188,7 +188,7 @@
                     android:text="Taj Foundation\nNGO Off Haralur, Karnataka\nPrefers Clothes, Toys, Stationary, Sports Equipment"
                     android:textSize="20sp" />
             </LinearLayout>
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 

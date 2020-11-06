@@ -104,8 +104,8 @@
         android:background="@drawable/rounded_edges"
         android:gravity="clip_horizontal"
         android:text="TextView"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="136dp" />
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="249dp" />
 
     <TextView
         android:id="@+id/reciever_message"
@@ -115,8 +115,8 @@
         android:background="@drawable/rounded_edges_sender"
         android:gravity="clip_horizontal"
         android:text="TextView"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="439dp" />
 
     <Button
         android:id="@+id/camera_button"
