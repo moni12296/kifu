@@ -88,7 +88,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/otherimg201702121737281" />
+        app:srcCompat="@drawable/blindppl" />
 
     <ImageView
         android:id="@+id/imageView6"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,57 +7,67 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="413dp"
-        android:layout_height="70"
+        android:layout_width="419dp"
+        android:layout_height="65dp"
         android:autofillHints=""
         android:background="#FBA97B"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="54dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/moans_u_suk"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="666dp" />
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/moans_u_suk" />
 
     <ImageView
         android:id="@+id/ngo1im2"
-        android:layout_width="65dp"
-        android:layout_height="61dp"
-        app:srcCompat="@drawable/moans_smd"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="668dp" />
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:srcCompat="@drawable/moans_smd" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        app:srcCompat="@android:drawable/ic_search_category_default"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="664dp" />
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ngo1im2"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
 
     <EditText
         android:id="@+id/input"
-        android:layout_width="217dp"
-        android:layout_height="42dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Type here.."
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/gallery_button"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
 
     <LinearLayout
-        android:layout_width="108dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="117dp"
         android:layout_height="665dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:background="#F6D9BE"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="2dp">
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/chatlist1"
@@ -79,59 +88,70 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="216dp"
         android:background="@drawable/mjlogo"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/selected_chat"
-        android:layout_width="226dp"
-        android:layout_height="65dp"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="Mitra Jyoti"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/sender_message"
-        android:layout_width="124dp"
-        android:layout_height="43dp"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="56dp"
         android:autoSizeTextType="none"
         android:background="@drawable/rounded_edges"
         android:gravity="clip_horizontal"
         android:text="TextView"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintBottom_toTopOf="@+id/reciever_message"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
 
     <TextView
         android:id="@+id/reciever_message"
-        android:layout_width="124dp"
-        android:layout_height="43dp"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="193dp"
         android:autoSizeTextType="none"
         android:background="@drawable/rounded_edges_sender"
         android:gravity="clip_horizontal"
         android:text="TextView"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/camera_button"
-        android:layout_width="43dp"
-        android:layout_height="42dp"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/camera"
-        tools:layout_editor_absoluteX="327dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toEndOf="@+id/gallery_button" />
 
     <Button
         android:id="@+id/gallery_button"
-        android:layout_width="43dp"
-        android:layout_height="42dp"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/gallry"
-        tools:layout_editor_absoluteX="370dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/camera_button"
+        app:layout_constraintStart_toEndOf="@+id/input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
