@@ -43,23 +43,95 @@
         tools:layout_editor_absoluteY="664dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="111dp"
-        android:layout_height="669dp"
-        android:background="#F6D9BE"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-5dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/input"
         android:layout_width="217dp"
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="618dp" />
+        android:text="Type here.."
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <LinearLayout
+        android:layout_width="108dp"
+        android:layout_height="665dp"
+        android:background="#F6D9BE"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TextView
+            android:id="@+id/chatlist1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Mitra Jyoti"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/chatlist2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Taj"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:background="@drawable/mjlogo"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/selected_chat"
+        android:layout_width="226dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="Mitra Jyoti"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/sender_message"
+        android:layout_width="124dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="none"
+        android:background="@drawable/rounded_edges"
+        android:gravity="clip_horizontal"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <TextView
+        android:id="@+id/reciever_message"
+        android:layout_width="124dp"
+        android:layout_height="43dp"
+        android:autoSizeTextType="none"
+        android:background="@drawable/rounded_edges_sender"
+        android:gravity="clip_horizontal"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:background="@drawable/camera"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:background="@drawable/gallry"
+        tools:layout_editor_absoluteX="370dp"
+        tools:layout_editor_absoluteY="622dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
