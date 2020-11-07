@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class NGO_List extends AppCompatActivity {
 
-    LinearLayout l,l1,l2,l3;
+    LinearLayout l,l1,l2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,14 +47,5 @@ public class NGO_List extends AppCompatActivity {
             }
         });
 
-        l3=findViewById(R.id.ButtonLayout3);
-
-        l3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intToMain = new Intent(NGO_List.this, Profile.class );
-                startActivity(intToMain);
-            }
-        });
     }
 }
